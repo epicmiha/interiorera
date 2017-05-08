@@ -14,10 +14,16 @@ html,body
     overflow-x: hidden;
     font-family: "Roboto", Arial, serif;
     line-height: 1.8;
-    background: #f0f0f0;
+    background: #ffffff;
     font-weight: 300;
 }
-
+.grey-section {
+    background: #f0f0f0;
+    padding: 2em;
+}
+.darkgrey-section {
+    background: #e6e6e6;
+}
 #header {
   color: #f1f1f1;
   z-index: 3;
@@ -300,6 +306,9 @@ z-index: 500;
   border-color:#f2f2f2;
   box-shadow: none;
 }
+.form-control {
+  
+}
 textarea#message{
   resize: none;
   padding: 10px;
@@ -502,7 +511,9 @@ textarea#message{
 textarea#message {
   resize: none;
   padding: 10px;
+  min-height: 240px;
 }
+
 .form-control {
   background: none;
   }
@@ -516,8 +527,9 @@ textarea#message {
   background-color: #D62E26;
 }
 .form-group input, .form-group textarea {
-  border:1px solid #222222 !important;
+  border: 1.5px solid #757575 !important;
   border-radius: 0;
+  min-height: 50px;
 }
 .form-group input:focus, .form-group textarea:focus {
   border:2px solid #D62E26 !important;
@@ -528,19 +540,81 @@ textarea#message {
 /***********************
 ********* Index ******
 ************************/
-#main-img, #services, #separator, #works, #separator img{
+#main-img, #services, #works, #img{
   width:100%;
   margin:0;
   padding: 0;
   
 }
-#separator {
-  margin-top : 2rem;
-  margin-bottom: 5rem;
-}
+
 /***********************
-********* Services ******
+********* FREE ESTIMATE ******
 ************************/
+
+
+
+.fh5co-half {
+  float: left;
+  width: 100%;
+  background: #f5f8f5;
+}
+.fh5co-half .fh5co-50 {
+  height: 500px;
+  float: left;
+}
+.fh5co-half .fh5co-right {
+  float: right;
+  display: table;
+}
+.fh5co-half .fh5co-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.fh5co-half .fh5co-half-img {
+  background-size: cover;
+  width: 50%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-half .fh5co-half-img {
+    width: 100%;
+    height: 300px;
+  }
+}
+.fh5co-half .fh5co-half-text {
+  width: 50%;
+  font-size: 1.5em;
+}
+.fh5co-text h2 {
+  font-size: 1.8em;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-half .fh5co-half-text {
+    width: 100%;
+    height: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.fh5co-section-title .fh5co-title,
+.fh5co-page-title .fh5co-title {
+  font-family: "Unica One", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2e2e2e;
+  font-size: 2em;
+  line-height: 40px;
+  display: inline-block;
+}
+.fh5co-section-title .fh5co-title-sub,
+.fh5co-page-title .fh5co-title-sub {
+  font-size: 2em;
+  font-weight: 300 !important;
+  line-height: 30px;
+  color: #7b7b7b;
+}
+
+
 
 
 /***********************
@@ -554,26 +628,19 @@ textarea#message {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
+#tabs {
+  margin-bottom: 1em;
+}
 .nav-pills > .active > a {
   background-color: #212121 !important;
-  border-radius: 0;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-right-width: 0.1rem;
-  border-left-width: 0.1rem;
-  border-right-color: #757575;
-  border-left-color: #757575;
 }
 .nav-pills a {
   background-color: #212121 !important;
   color: #757575;
+  font-size: 1.3em;
+  padding: 0 !important;
+  margin-left: 0.5em;
   border-radius: 0 !important;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-right-width: 0.1rem;
-  border-left-width: 0.1rem;
-  border-right-color: #757575;
-  border-left-color: #757575; 
 }
 /***********************
 ********* SERVICES PAGES ******
@@ -1479,11 +1546,7 @@ select:focus {
 
 .mdl-selectfield, .mdl-selectfield1 {
 	position: relative;
-  margin-bottom: 45px;
-}
-
-.mdl-selectfield1 {
-  margin-top: 3rem;
+  margin-bottom: 35px;
 }
 
 .mdl-selectfield:after {
@@ -1517,14 +1580,20 @@ select:focus {
 
 .mdl-selectfield1 select {
   width:100%;
+
 }
 .mdl-selectfield option {
   color: #212121;
+  padding: 1em;
 }
 .mdl-selectfield1 option {
   color: #212121;
 }
 
+.browser-default {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
 .mdl-selectfield select {
 	background: none;
   color: black;
@@ -1538,6 +1607,9 @@ select:focus {
 .group input{
   background: none;
   border: 1.5px solid #757575;
+}
+.group{
+ margin-bottom: 35px !important; 
 }
 
 
@@ -1659,12 +1731,6 @@ select:focus {
  
 
 
-
-
-
-
-
-
 #res-section {
   width:100%;
   padding-bottom: 5rem;
@@ -1672,3 +1738,14 @@ select:focus {
 #res-section h2 {
   font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
