@@ -22,7 +22,9 @@ h2, h3, h4, h5, h6 {
   font-family: "Unica One", sans-serif;
   text-transform: uppercase;
 }
-
+.overlay-gradient {
+    background: rgba(0, 0, 0, 0.45);
+}
 .grey-section {
     background: #f0f0f0;
 }
@@ -280,19 +282,27 @@ z-index: 500;
   height: 50rem;
 }
 #content {
-  position: absolute; top: 0; left: 0; z-index: 999;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 999;
   background-image: none;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.75;
   color:#f1f1f1 !important;
   width:100%;
   height:100%;
   margin:0;
-  padding-left:10rem;
-  padding-top:5rem;
+  padding-left:7rem;
+  padding-top:10rem;
   pointer-events: none;
   font-size: 1.5em;
 }
+#content h1 {
+  margin-bottom: 1.5em;
+  font-size: 2.1em;
+}
+
 #content address {
   pointer-events: auto;
 }
@@ -311,9 +321,7 @@ z-index: 500;
   border-color:#f2f2f2;
   box-shadow: none;
 }
-.form-control {
-  
-}
+
 textarea#message{
   resize: none;
   padding: 10px;
@@ -441,13 +449,16 @@ textarea#message{
 }
 #experience p {
   font-size: 2rem;
-  margin-top:2rem;
-}
-#experience h1 {
-  font-size:5rem;
 }
 #experience h2 {
-  font-size:4rem;
+  font-size:7rem;
+  padding: 0;
+  margin: 0;
+}
+#experience h3 {
+  font-size:5rem;
+  padding: 0;
+  margin: 0;
 }
 #why {
   background-color: #E0E0E0;
@@ -605,6 +616,7 @@ textarea#message {
   display: inline-block;
   padding-top: 0.5em;
 }
+
 .fh5co-section-title .fh5co-title-sub,
 .fh5co-page-title .fh5co-title-sub {
   font-size: 2em;
@@ -622,6 +634,10 @@ textarea#message {
 #works, #works-img, #twenty1 img, #twenty2 img, #twenty3 img, #twenty4 img, #twenty5 img, #my-tab-content {
   width:100%;
 }
+#works {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 #works-img {
   margin:0;
   margin-top: 3rem;
@@ -631,11 +647,12 @@ textarea#message {
   margin-bottom: 1em;
 }
 .nav-pills > .active > a {
-  background-color: #212121 !important;
+  background-color: #4d3a3b !important;
+  color: #f2ecd2;
 }
 .nav-pills a {
-  background-color: #212121 !important;
-  color: #757575;
+  background-color: #445655 !important;
+  color: #f2ecd2;
   font-size: 1.3em;
   padding: 0 !important;
   margin-left: 0.5em;
@@ -1118,8 +1135,8 @@ textarea#message {
 .white-text {
   color: #fff;
 }
-#experience, #feedbacks, #insurance-claim {
-  margin-top: 4rem;
+#experience, #feedbacks {
+  margin-top: 2em;
 }
 
 .big {
@@ -1270,15 +1287,17 @@ textarea#message {
 }
 
 
-.section-content {
+/*.section-content {
   padding: 1em;
   padding-left: 2.5em;
-}
+}*/
 .section-content p {
-  font-size: 1.32em;
+  font-size: 1.5em;
 }
-.section-content h3 {
-  font-size: 1.8em;
+.section-content h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 .mask h3:hover {
   text-decoration: none;
@@ -1288,9 +1307,7 @@ textarea#message {
 #res-section h2 {
   margin-bottom: 1em;
 }
-#res-section {
-  margin-bottom: 1.5em;
-}
+
 
 
 
@@ -1792,3 +1809,173 @@ select:focus {
 
 
 
+#fh5co-section {
+  float: left;
+  width: 100%;
+  display: block;
+}
+#fh5co-section .grid-project-section {
+  width: 25%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+#fh5co-section .grid-project-section > a > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-section .grid-project-section .desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 30%;
+  z-index: 99;
+}
+#fh5co-section .grid-project-section .desc h3 {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2em;
+}
+#fh5co-section .grid-project-section:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+  content: '';
+  z-index: 9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#fh5co-section .grid-project-section:hover:after, #fh5co-section .grid-project-section:focus:after {
+  background: rgba(0, 0, 0, 0.05);
+}
+#fh5co-section .grid-project-section:hover > a > img, #fh5co-section .grid-project-section:focus > a > img {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+@media screen and (max-width: 768px) {
+  #fh5co-section .grid-project-section {
+    width: 100%;
+  }
+}
+
+
+
+
+.feature-left {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.feature-left .icon {
+  float: left;
+  text-align: center;
+  width: 15%;
+}
+.feature-left .icon img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70%;
+  color: #212121;
+}
+.feature-left .feature-copy {
+  float: right;
+  width: 85%;
+}
+.feature-left .feature-copy h3 {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fh5co-feature {
+  text-align: left;
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+  position: relative;
+}
+.fh5co-feature .fh5co-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  display: table;
+  text-align: center;
+  background: #999999;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.fh5co-feature .fh5co-icon i {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 40px;
+  height: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .fh5co-feature .fh5co-icon i {
+    font-size: 40px;
+  }
+}
+.fh5co-feature .fh5co-text {
+  padding-left: 120px;
+  width: 100%;
+}
+.fh5co-feature .fh5co-text h2, .fh5co-feature .fh5co-text h3 {
+  margin: 0;
+  padding: 0;
+}
+.fh5co-feature .fh5co-text h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+/*.fh5co-feature.fh5co-feature-sm .fh5co-text {
+  margin-top: 10px;
+}*/
+.fh5co-feature.fh5co-feature-sm .fh5co-icon i {
+  color: #000;
+  font-size: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
+    font-size: 28px;
+  }
+}
