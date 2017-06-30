@@ -198,3 +198,5 @@ $(document).ready(function () {
 	TweenLite.to('#anim-fast', 1.5, {left:0, ease:Elastic.easeOut, skewX:0, delay:3});	
 
 });
+
+

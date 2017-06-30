@@ -12,8 +12,10 @@
         <link href="css/main.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700|Unica+One' rel='stylesheet' type='text/css'>
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -93,7 +95,7 @@
         </header><!--/header-->
 
 
-        <div class="emergency">
+        <div class="emergency widescreen">
             <img src="images/247.png">
         </div>
 
@@ -108,7 +110,8 @@
 
         <div class="row container text-left texts">
 				<div class="col-md-10 col-md-offset-1">
-                    <h2 style="text-align: justify; text-justify: inter-word;">InteriorEra works with many property managers to help them during an emergency situation. Our crew is trained, fully qualified and  ready to react quickly in order to minimize your damage. If you have an emergency don't scruple to call us.</h2>
+					<h2 style="text-align: justify; text-justify: inter-word;">InteriorEra works with many property managers</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">InteriorEra works with many property managers to help them during an emergency situation. Our crew is trained, fully qualified and  ready to react quickly in order to minimize your damage. If you have an emergency don't scruple to call us.</p>
                     <p style="text-align: justify; text-justify: inter-word;">Condominium emergency claims can be difficult and complicated and InteriorEra has extensive experience dealing with emergency claims and can help you to get back on track as soon as possible. When you first call InteriorEra we will quickly send an emergency crew to you location to assess the damage and begin the work. Our team knows the importance of returning units back to their original state as soon as possible and we will work closely with your staff to ensure that as much damage as possible is minimized.</p>
                     <p style="text-align: justify; text-justify: inter-word;">It's very important in an emergency that you contact InteriorEra as soon as possible. In most cases the more time that passes the worse the problem will get. No matter what your emergency (flood, fire, wind) we are always ready to help.</p>
                    
@@ -116,7 +119,7 @@
 		</div>
 
 
-        <div class="row container text-center" id="insurance-companies">
+        <div class="row container text-center grey-section" id="insurance-companies">
 				<div class="col-md-12">
 					  <!--  INSURANCE -->   
               <div id="res-section"  class="res-light-grey-section">
@@ -212,8 +215,52 @@
 
 
 
+ <div class="row container text-center" id="works">
+        <div class="fh5co-section-title text-center">
+                <h2 class="fh5co-title">Our Works</h2>
+            </div>
+		</div>
 
-        	<div id="res-section" >
+        <div class="row container text-center" id="works-img"> 
+				<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+                    <div id="my-tab-content">
+                            <ul id="tabs" class="nav nav-pills nav-justified" data-tabs="pills">
+                            <li class="active"><a href="#water-damage" data-toggle="pill">Condo#1</a></li>
+                            <li><a href="#mold-removal" data-toggle="pill">Condo#2</a></li>
+                            <li><a href="#fire-restoration" data-toggle="pill">Condo#3</a></li>
+                            <li><a href="#trauma" data-toggle="pill">Condo#4</a></li>
+                        </ul>
+                        <div id="water-damage" class=" tab-pane active">
+                            <div id="twenty1" class="twentytwenty-container">
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-before1.jpg" alt="Bathroom renovation toronto gta before"/>
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-after1.jpg" alt="bathroom renovation toronto gta after"/>
+                            </div>
+                        </div>
+                        <div id="mold-removal" class=" tab-pane">
+                            <div id="twenty2" class="twentytwenty-container">
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-before2.jpg" alt="Bathroom renovation toronto gta before"/>
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-after2.jpg" alt="bathroom renovation toronto gta after"/>
+                            </div>
+                        </div>
+                        <div id="fire-restoration" class=" tab-pane">
+                            <div id="twenty3" class="twentytwenty-container">
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-before3.jpg" alt="Bathroom renovation toronto gta before"/>
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-after3.jpg" alt="bathroom renovation toronto gta after"/>
+                            </div>
+                        </div>
+                        <div id="trauma" class=" tab-pane">
+                            <div id="twenty4" class="twentytwenty-container">
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-before4.jpg" alt="Bathroom renovation toronto gta before"/>
+                                <img src="images/twenty/condo-restoration/bathroom-toronto-after4.jpg" alt="bathroom renovation toronto gta after"/>
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+		</div>
+
+
+        	<div id="res-section" class="grey-section">
     	<div class="container">
     		<div class="col-md-6 col-md-offset-3 text-center res-heading  ">
     			<h2>Our Quality Marks</h2>
@@ -292,7 +339,9 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.prettyPhoto.js"></script>
+        <script async src="js/jquery.twentytwenty.js"></script>
         <script src="js/jquery.isotope.min.js"></script>
         <script src="js/main.js"></script>
+        <script async src="js/jquery.event.move.js"></script>
     </body>
 </html>
