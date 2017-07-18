@@ -149,6 +149,12 @@ z-index: 500;
   font-weight: bold;
   font-size: 1.3em;
 }
+@media screen and (max-width: 768px) {
+.navbar-collapse {
+  background: rgba(252, 253, 253, 0.94);
+}
+}
+
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-top: 0;
@@ -1424,7 +1430,7 @@ textarea#message {
 .services2 ul li a
 {
   font-weight:400;
-  font-size:1.25em;
+  font-size:1.15em;
   padding-top:0.30em;
   padding-bottom:0.3em;
   color:#d2cbb8;
