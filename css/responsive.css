@@ -29,7 +29,7 @@
   }
 
   .navbar-nav > li {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .navbar-collapse {
@@ -134,7 +134,7 @@
 }
 
   .caption h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -180,16 +180,25 @@
 
   .caption {
     position: absolute;
-    top: 5%;
+    top: 35%;
     left: 0;
     width: 100%;
   }
+ 
   .caption .btn {
     margin-top: 1rem;
   }
 
   .caption h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+   @media (max-width: 430px) {
+  .caption h1 {
+    font-size: 2rem !important;
+  }
+    .caption {
+    top: 45%;
+  }
   }
 
     .big{

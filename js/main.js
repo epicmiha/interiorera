@@ -51,7 +51,6 @@ $(function() {
 	});
 
 
-
 $(window).on("load", function(){ 
     $("#twenty1").twentytwenty();
     $("#twenty2").twentytwenty();
@@ -173,7 +172,6 @@ var owlCrouselFeatureSlide = function() {
 
 
 
-
 (function () {
     'use strict';
 
@@ -192,11 +190,16 @@ var owlCrouselFeatureSlide = function() {
     htmlElement.addEventListener('touchstart', touchStart);
 }());
 
-$(document).ready(function () {	
-	TweenLite.to('.message', 0.8, {opacity:1, delay:0.5});	
-	TweenLite.set('#anim-fast', {skewX:50});
-	TweenLite.to('#anim-fast', 1.5, {left:0, ease:Elastic.easeOut, skewX:0, delay:3});	
 
+
+
+$(function(){
+    $('.repeat').click(function(){
+        var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+            $(indicator).parent().addClass(classes);
+        }, 20);
+    });
 });
-
-
